@@ -1,8 +1,9 @@
-import strategies.ListeMotStrategy;
+import strategies.MotStrategy;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class ListerMots {
     private String fichier;
@@ -11,11 +12,15 @@ public class ListerMots {
         this.fichier = fichier;
     }
 
-    public void traitement(ListeMotStrategy ls) throws IOException {
+    public void traitement(MotStrategy ls) throws IOException {
         BufferedReader input = new BufferedReader(new FileReader(this.fichier));
         String buffer = null;
         while ((buffer = input.readLine()) != null) {
-            ls.verifierCondition(buffer);
+            StringTokenizer mots = new StringTokenizer(buffer, " \t.;(){}\"'*=:!/\\");
+            while (mots.hasMoreTokens()) {
+                String mot = mots.nextToken();
+                if (ls.verifierCondition(mot)) System.out.println(mot);
+            }
             }
         }
     }

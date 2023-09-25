@@ -1,10 +1,12 @@
-import strategies.MotStrategyLongueur;
+import strategies.*;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        DecoratorCompteurDeMots ms = new DecoratorCompteurDeMots(new StrategyCommencePar('t'));
         ListerMots lm = new ListerMots("text.txt");
-        lm.traitement(new MotStrategyLongueur(3));
+        lm.traitement(ms);
+        System.out.println(ms.getCompteur());
     }
 }
