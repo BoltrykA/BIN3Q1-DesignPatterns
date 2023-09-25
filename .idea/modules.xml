@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BIN3Q1-DesignPatterns.iml" filepath="$PROJECT_DIR$/BIN3Q1-DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sem2-Strategy/Sem2-Strategy.iml" filepath="$PROJECT_DIR$/Sem2-Strategy/Sem2-Strategy.iml" />
     </modules>
   </component>
 </project>
