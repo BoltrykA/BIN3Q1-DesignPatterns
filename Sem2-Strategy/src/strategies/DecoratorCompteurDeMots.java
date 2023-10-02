@@ -1,7 +1,7 @@
 package strategies;
 
 public class DecoratorCompteurDeMots implements MotStrategy {
-    private MotStrategy decoratedStrat;
+    private final MotStrategy decoratedStrat;
     private int compteur;
 
     public DecoratorCompteurDeMots(MotStrategy strat){

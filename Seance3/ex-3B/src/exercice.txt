@@ -1,0 +1,14 @@
+Nom du pattern : Decorator
+Participants théoriques : Component+ConcreteComponent et Decorator+ConcreteDecorator
+Noms utilisés dans le code :
+> Component : Boisson
+> ConcreteComponent : Décaféiné/Moka/Dessert (café compte pas car c'est abstract class des 3 boissons)
+> Decorator : Additif
+> ConcreteDecorator : Sucre/Lait/Creme
+
+Nom théorique des méthodes : operation() pour chaque participant théorique, une action a faire pour chaque
+
+Nom utilisé dans le code :
+> Boisson -> prix()
+> Decaf/Moka/Dessert -> prix()
+> ... (prix partout)
