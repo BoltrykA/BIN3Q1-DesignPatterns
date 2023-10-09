@@ -2,9 +2,8 @@ package FactoryMethod;
 
 public class MagasinDeLivre extends Magasin {
 
-  @Override
-  protected void ajouterProduit(String name, int anneeDeParution) {
-    Produit p = new Livre(name,anneeDeParution);
-    bac.put(name,p);
-  }
+    @Override
+    protected Produit creerProduit(String name, int anneeDeParution) {
+        return new Livre(name, anneeDeParution);
+    }
 }

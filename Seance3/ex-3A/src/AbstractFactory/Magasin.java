@@ -5,11 +5,12 @@ import java.util.Map;
 
 public class Magasin {
 	private AbstractFactory factory;
+	private Map<String, Produit> bac= new HashMap<>();
+
 	public Magasin(AbstractFactory factory){
 		this.factory = factory;
 	}
 
-	private Map<String, Produit> bac= new HashMap<>();
 	public void ajouterProduit(String name, int anneeDeParution){
 		Produit p = factory.creerProduit(name, anneeDeParution);
 		bac.put(name,p);

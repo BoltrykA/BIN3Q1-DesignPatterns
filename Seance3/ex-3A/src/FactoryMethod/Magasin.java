@@ -4,14 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Magasin {
-	protected Map<String, Produit> bac;
+    private Map<String, Produit> bac = new HashMap<>();
 
-  public Magasin() {
-    bac = new HashMap<>();
-  }
+    public void ajouterProduit(String name, int anneeDeParution) {
+        Produit p = creerProduit(name, anneeDeParution);
+        bac.put(name, p);
+    }
 
-  protected abstract void ajouterProduit(String name, int anneeDeParution); // Override pour chaque type de product
-	public Produit retourneProduit(String name){
-		return bac.get(name);
-	}
+    protected abstract Produit creerProduit(String name, int anneeDeParution);
+
+    public Produit retourneProduit(String name) {
+        return bac.get(name);
+    }
 }
