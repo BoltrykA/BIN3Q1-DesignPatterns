@@ -5,9 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/BIN3Q1-DesignPatterns.iml" filepath="$PROJECT_DIR$/BIN3Q1-DesignPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/Seance3.iml" filepath="$PROJECT_DIR$/Seance3/Seance3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sem2-Strategy/Sem2-Strategy.iml" filepath="$PROJECT_DIR$/Sem2-Strategy/Sem2-Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/State/State.iml" filepath="$PROJECT_DIR$/State/State.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/ex-3A/ex-3A.iml" filepath="$PROJECT_DIR$/Seance3/ex-3A/ex-3A.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/ex-3B/ex-3B.iml" filepath="$PROJECT_DIR$/Seance3/ex-3B/ex-3B.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/ex-3C/ex-3C.iml" filepath="$PROJECT_DIR$/Seance3/ex-3C/ex-3C.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex4/ex4.iml" filepath="$PROJECT_DIR$/ex4/ex4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/exFactories/exFactories.iml" filepath="$PROJECT_DIR$/Seance3/exFactories/exFactories.iml" />
     </modules>
   </component>
