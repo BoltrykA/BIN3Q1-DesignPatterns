@@ -1,13 +1,13 @@
 public class RobotConcret implements Robot {
     //valeurs par défaut
-    private int health = 100;
-    private final int canonPower = 1;
-    private final int shield = 1;
-    private final int freq = 100;
+    private final int health;
+    private final int canonPower;
+    private final int shield;
+    private final int freq;
     private String name;
 
-    private RobotConcret(){
-
+    private RobotConcret(RobotBuilder robotBuilder){
+        this.health = robotBuilder.health;
     }
 
 
@@ -39,6 +39,10 @@ public class RobotConcret implements Robot {
     }
 
     public static class RobotBuilder {
-
+        private int health;
+        private String name;
+        private int shield;
+        private int freq;
+        private int canonPower;
     }
 }
