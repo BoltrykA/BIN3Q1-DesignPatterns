@@ -1,8 +1,6 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class RobotConcret implements Robot {
     //valeurs par défaut
+
     private int health;
     private final int canon; //canonPower
     private final int shield;
@@ -45,6 +43,15 @@ public class RobotConcret implements Robot {
     public int diffLife(int i) {
         this.health = health + (i);
         return health;
+    }
+
+    @Override
+    public Robot clone() {
+        try {
+            return (Robot) super.clone();
+        } catch (CloneNotSupportedException e){
+            throw new RuntimeException(e);
+        }
     }
 
     public static class RobotBuilder {
