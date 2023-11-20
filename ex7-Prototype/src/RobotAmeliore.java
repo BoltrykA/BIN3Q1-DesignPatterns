@@ -30,5 +30,11 @@ public abstract class RobotAmeliore implements Robot {
         return this.decoratedRobot.diffLife(i);
     }
 
-
+    @Override
+    public Robot clone() {
+        Robot copy = decoratedRobot.clone();
+        RobotAmeliore robotAmeliore = (RobotAmeliore) this.clone();
+        robotAmeliore.decoratedRobot = copy;
+        return robotAmeliore;
+    }
 }

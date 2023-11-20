@@ -7,4 +7,6 @@ public class RobotAmelioreBouclier extends RobotAmeliore {
     public int getShield() {
         return super.getShield()*2;
     }
+
+
 }

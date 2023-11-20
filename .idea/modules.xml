@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/ex4/ex4.iml" filepath="$PROJECT_DIR$/ex4/ex4.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex7/ex7-AbstractFactory.iml" filepath="$PROJECT_DIR$/ex7/ex7-AbstractFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex7-Prototype/ex7-Prototype.iml" filepath="$PROJECT_DIR$/ex7-Prototype/ex7-Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex8-cor/ex8-cor.iml" filepath="$PROJECT_DIR$/ex8-cor/ex8-cor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seance3/exFactories/exFactories.iml" filepath="$PROJECT_DIR$/Seance3/exFactories/exFactories.iml" />
     </modules>
   </component>

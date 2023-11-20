@@ -27,6 +27,21 @@ public class PatternRobots {
 	}
 	
 	public static void main(String[] args) {
+		RobotCache robotCache = new RobotCache();
+		robotCache.put("grosseberta", new RobotConcret.RobotBuilder("grosseberta")
+				.freq(3)
+				.canon(15)
+				.build());
+		robotCache.put("picvert", new RobotConcret.RobotBuilder("picvert")
+				.freq(30)
+				.build());
+		robotCache.put("tank", new RobotConcret.RobotBuilder("tank")
+				.health(200)
+				.shield(50)
+				.freq(5)
+				.build());
+
+
 		Robot robot1 = new RobotAmelioreCanon(new RobotConcret.RobotBuilder("robot1")
 				.canon(10)
 				.shield(2)
@@ -37,8 +52,8 @@ public class PatternRobots {
 				.shield(3)
 				.freq(90)
 				.build()); // un robot avec un canon de 9, un bouclier de 3, une fréquence de tir de 90
-					// et qui a reçu une amélioration de bouclier multipliant ce dernier par 2 et une amélioration de mitigation des dégats qui réduit les points de vue perdus par 2. 
-		
+					// et qui a reçu une amélioration de bouclier multipliant ce dernier par 2 et une amélioration de mitigation des dégats qui réduit les points de vue perdus par 2.robotCache.put("amelioreCanon", robot1);
+
 		fight(robot1, robot2);
 	}
 }

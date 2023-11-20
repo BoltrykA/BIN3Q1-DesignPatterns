@@ -8,4 +8,5 @@ public class RobotAmelioreVie extends RobotAmeliore {
         i /= 2;
         return super.diffLife(i);
     }
+
 }

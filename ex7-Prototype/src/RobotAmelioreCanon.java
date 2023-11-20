@@ -7,4 +7,5 @@ public class RobotAmelioreCanon extends RobotAmeliore{
     public int getCanon() {
         return super.getCanon()*2;
     }
+
 }

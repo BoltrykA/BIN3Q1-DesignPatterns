@@ -4,8 +4,9 @@ public class RobotFactoryTank implements RobotFactory{
     public Robot creerRobot(String nom) {
         return new RobotConcret.RobotBuilder(nom)
                 .freq(20)
+                .health(200)
                 .canon(1)
-                .shield(1)
+                .shield(50)
                 .build();
     }
 }
